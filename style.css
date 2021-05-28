@@ -1,10 +1,12 @@
 html, body {
     margin: 0;
     background-color: #000;
+    font-family: 'Mate SC', serif;
 }
 
 footer {
     color: #fff;
+    font-size: 13px;
 }
 
 .header {
@@ -18,14 +20,10 @@ footer {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2;
 }
 
 .header-nav {
     text-align: center;
-    top: 0;
-    right: 0;
-    z-index: 3;
 }
 
 .header-nav a {
@@ -37,8 +35,9 @@ footer {
 .header-nav a:hover {
     text-decoration: underline;
 }
+
 .underC {
-    height: 700px;
+    height: 645px;
 }
 
 .underC h1 {
@@ -46,6 +45,13 @@ footer {
     font-size: 70px;
     text-align: center;
     vertical-align: middle;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    text-shadow: #323232 5px 10px;
+}
+
+.underC img {
+    display: inline-block;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: 20px;
+    border-radius: 0px 100px 0px 100px;
 }
