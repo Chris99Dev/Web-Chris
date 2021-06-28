@@ -1,0 +1,41 @@
+body, html {
+    margin: 0;
+    background: rgba(55, 88, 62, 0.795);
+    height: 100%;
+    font-family: 'Mate SC', serif;
+}
+
+.central h1 {
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: #323232 5px 10px;
+}
+
+.central ul{
+    text-align: center;
+}
+
+.central li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.central li img {
+    height: 55px;
+}
+
+.moi {
+    display: block;
+    padding: 50px 0 0 30px;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
