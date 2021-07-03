@@ -38,13 +38,6 @@ body, html {
     box-shadow: #323232 10px 5px;
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    clear: both;
-}
-
 hr {
     border: 0;
     margin: 1.35em auto;
@@ -76,4 +69,10 @@ hr {
       hsla(0, 0%, 0%, 0.75) 50%,
       hsla(0, 0%, 0%, 0));
 }
-  
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
