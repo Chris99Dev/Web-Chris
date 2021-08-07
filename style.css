@@ -5,36 +5,47 @@ html, body {
     font-family: 'Mate SC', serif;
 }
 
-.header {
-    position: fixed;
-    height: 60px;
-    width: 100%;
-    background: white;
+.navbar {
+    background-color: white;
 }
 
-.header-title {
-    padding-left: 10px;
-    font-size: 36px;
+.navbar a {
+    text-decoration: none;
     color: black;
 }
 
-.header-nav {
-    position: absolute;
-    width: 691.99px;
-    height: 29.47px;
-    left: 618px;
-    top: 17px;
+.navbar-item {
+    text-align: center;
+    padding: 10px 10px;
 }
 
-.header-nav a {
-    padding: 10px;
-    text-decoration: none;
-} 
+.navbar-item li {
+    display: inline;
+    padding: 25px
+}
 
-.header-social {
-    position: absolute;
-    width: 165.82px;
-    height: 42.77px;
-    left: 1732px;
-    top: 11px;
+.navbar-item a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Body */ 
+.principal {
+    background-color: grey;
+}
+
+.presentation {
+    float: right;
+}
+
+.rs {
+    text-align: center;
+}
+
+.rs a {
+    padding: 30px;
+}
+
+.rs img {
+ height: 80px;
 }
