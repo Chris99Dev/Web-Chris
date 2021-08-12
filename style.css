@@ -1,51 +1,5 @@
 html, body {
     margin: 0;
     background: rgba(55, 88, 62, 0.795);
-    height: 100%;
     font-family: 'Mate SC', serif;
-}
-
-.navbar {
-    background-color: white;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
-}
-
-.navbar-item {
-    text-align: center;
-    padding: 10px 10px;
-}
-
-.navbar-item li {
-    display: inline;
-    padding: 25px
-}
-
-.navbar-item a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Body */ 
-.principal {
-    background-color: grey;
-}
-
-.presentation {
-    float: right;
-}
-
-.rs {
-    text-align: center;
-}
-
-.rs a {
-    padding: 30px;
-}
-
-.rs img {
- height: 80px;
 }
