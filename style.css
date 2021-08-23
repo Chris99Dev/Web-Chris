@@ -3,3 +3,17 @@ html, body {
     background: rgba(55, 88, 62, 0.795);
     font-family: 'Mate SC', serif;
 }
+
+nav a{
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
