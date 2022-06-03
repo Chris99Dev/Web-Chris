@@ -8,6 +8,11 @@
     <meta name="description" content="Christopher Ferreira website">
 
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
     <title>Web Christopher Ferreira</title>
 </head>
@@ -15,7 +20,7 @@
 <body>
     <header>
         <div class="logo">
-            <p>Christopher Ferreira</p>
+            <h1>Christopher Ferreira</h1>
         </div>
         <nav class="nav-bar">
             <a href="index.html" class="nav-link">Accueil</a>
@@ -26,84 +31,103 @@
 
     <main>
         <section class="presentation">
-            <h1 class="pres-title">Christopher Ferreira</h1>
-            <span>
-                <h2>Bienvenue a vous !</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus minima odio nam iusto non! Hic
-                    possimus eveniet reprehenderit officiis soluta nam, perspiciatis aut dolorem sed autem ad nesciunt
-                    tenetur sapiente, minima quos libero! Mollitia quidem quas quia qui rem repellat magnam ex sed
-                    aspernatur voluptatum?</p>
-            </span>
+            <div class="pres-image">
+                <img src="./img/Christopher_Ferreira_Seirous.jpg" alt="Photo de Christopher F">
+            </div>
+            <div class="block-pres">
+                <span class="pres-text">
+                    <h2>Bienvenue a vous !</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus minima odio nam iusto non! Hic
+                        possimus eveniet reprehenderit officiis soluta nam, perspiciatis aut dolorem sed autem ad
+                        nesciunt
+                        tenetur sapiente, minima quos libero! Mollitia quidem quas quia qui rem repellat magnam ex sed
+                        aspernatur voluptatum?</p>
+                </span>
+                <div class="button-menu">
+                    <div class="button"><a href="#exp">Experiences</a></div>
+                    <div class="button"><a href="#form">Formations</a></div>
+                    <div class="button"><a href="#">Hobbies</a></div>
+                    <div class="button"><a href="#">Competences</a></div>
+                    <a class="button" href="contact.html">
+                        <span>Contact</span>
+                    </a>
+                </div>
         </section>
-
-        <section class="experiences">
-            <h2>Experiences</h2>
-            <div class="list-exp">
-                <div class="card-exp">
-                    <h3>Exp 1</h3>
-                    <h4>Poste</h4>
-                    <p>2019</p>
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem modi, quibusdam nobis
-                        veniam optio.</span>
-                </div>
-                <div class="card-exp">
-                    <h3>Exp 1</h3>
-                    <h4>Poste</h4>
-                    <p>2019</p>
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem modi, quibusdam nobis
-                        veniam optio.</span>
-                </div>
-                <div class="card-exp">
-                    <h3>Exp 1</h3>
-                    <h4>Poste</h4>
-                    <p>2019</p>
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem modi, quibusdam nobis
-                        veniam optio.</span>
-                </div>
-            </div>
-            <div class="list-exp2">
-                <div class="card-exp">
-                    <h3>Exp 1</h3>
-                    <h4>Poste</h4>
-                    <p>2019</p>
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem modi, quibusdam nobis
-                        veniam optio.</span>
-                </div>
-                <div class="card-exp">
-                    <h3>Exp 1</h3>
-                    <h4>Poste</h4>
-                    <p>2019</p>
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore rem modi, quibusdam nobis
-                        veniam optio.</span>
+        <section class="experiences" id="exp">
+            <div class="exper-card">
+                <h2>Experiences</h2>
+                <div class="list-exp">
+                    <div class="card-exp">
+                        <div class="card-info">
+                            <h3>Auto Entrepreneur</h3>
+                            <h4>Consultant IT</h4>
+                            <p>Nov 2019 - Avril 2020</p>
+                            <span>Proposition de service It
+                                <ul>
+                                    <li>Support et instalation de materiel informatique</li>
+                                    <li>Mise en place de procedure</li>
+                                    <li>Initiation au best Practice</li>
+                                    <li>Conseil en materiel</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-exp">
+                        <div class="card-info">
+                            <h3>BlaBlaCar, Paris</h3>
+                            <h4>Technicien Informatique</h4>
+                            <p>Juil 2016 - Aout 2019</p>
+                            <ul>
+                                <li>Support Utilisateurs</li>
+                                <li>Gestion Compte et accès AD, GSuite</li>
+                                <li>Gestion flotte téléphonique (AirCall)</li>
+                                <li>Paramétrage switch Meraki(Cisco)</li>
+                                <li>Gestion technique des événements</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-exp">
+                        <div class="card-info">
+                            <h3>Deletec, Paris</h3>
+                            <h4>Technicien Informatique</h4>
+                            <p>Jan 2016 - Juin 2016</p>
+                            <span>En mission a BlaBlaCar</span>
+                            <ul>
+                                <li>Mission migration vers AD des utilisateurs</li>
+                                <li>Gestion migration des données utilisateurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-exp">
+                        <div class="card-info">
+                            <h3>EIG S.A.S, Clichy la Garenne</h3>
+                            <h4>Opérateur Systèmes et réseaux</h4>
+                            <p>Juil 2013 - Dec 2014</p>
+                            <ul>
+                                <li>Installation serveur sous Windows 2008 R2</li>
+                                <li>Paramétrage Sauvegarde avec Symantec Backup</li>
+                                <li>Vérification des états serveurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-exp">
+                        <div class="card-info">
+                            <h3>EIG Diffusion, Clichy la Garenne</h3>
+                            <h4>Technicien Réseaux</h4>
+                            <p>Juil 2011 - Juin 2013</p>
+                            <ul>
+                                <li>Installation et configuration de PC</li>
+                                <li>Creation comptes Users AD, Exchange et GPO</li>
+                                <li>Paramétrage routeurs et VPN</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <div class="multi-info">
-            <div class="hobbies">
-                <h2>Hobbies</h2>
-                <div class="list-hob">
-                    <div class="card-hob">
-                        <h3 class="hob-title">Sports</h3>
-                        <ul class="point-hob">
-                            <li>Played American Football (14years)</li>
-                            <li>NBA Fan</li>
-                        </ul>
-                    </div>
-                    <div class="card-hob">
-                        <h3 class="hob-title">Video Games</h3>
-                        <ul class="point-hob">
-                            <li>RPG games</li>
-                            <li>Car simulation</li>
-                            <li>Twitch Channel</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-
+        <section class="multi-info">
             <div class="formations">
-                <h2>Formations</h2>
+                <h2 id="form">Formations</h2>
                 <div class="list-form">
                     <div class="card-form">
                         <h3>OpenClassRooms</h3>
@@ -127,45 +151,47 @@
                     </div>
                 </div>
             </div>
-
             <div class="skills">
                 <h2>Skills</h2>
                 <div class="list-skill">
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>HTML 5</h3>
                         <p>9 / 10</p>
                     </div>
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>CSS 3</h3>
                         <p>9 / 10</p>
                     </div>
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>SEO</h3>
                         <p>6 / 10</p>
                     </div>
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>Accessibility</h3>
                         <p>7 / 10</p>
                     </div>
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>JavaScript</h3>
                         <p>In progress</p>
                     </div>
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>Node Js</h3>
                         <p>In progress</p>
                     </div>
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>Angular JS</h3>
                         <p>In progress</p>
                     </div>
-                    <div class="card-skil">
+                    <div class="card-skill">
                         <h3>React JS</h3>
                         <p>In progress</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
+
+
 
     </main>
 
