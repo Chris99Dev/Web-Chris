@@ -331,14 +331,14 @@ footer {
   }
 
   .presentation {
-    width: auto;
-    height: 900px;
+    width: inherit;
     flex-direction: column;
   }
 
   .block-pres {
     position: relative;
     top: -148px;
+    width: 80%;
   }
 
   .pres-text {
@@ -376,6 +376,47 @@ footer {
   .skills {
     width: auto;
   }
+
+  footer {
+    margin: 0;
+  }
 }
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+  .presentation {
+    height: auto;
+    width: 100%;
+  }
+
+  .pres-image {
+    width: 100%;
+  }
+
+  .pres-image img {
+    width: 100%;
+  }
+
+  .exper-card {
+    width: 90%;
+  }
+
+  .formations {
+    width: 90%;
+  }
+
+  .skills {
+    width: 90%;
+  }
+
+  .list-skill {
+    gap: 10px 20px;
+  }
+
+  .list-skill-progress {
+    gap: 10px 20px;
+  }
+
+  .card-skill-progress {
+    width: auto;
+  }
+}
