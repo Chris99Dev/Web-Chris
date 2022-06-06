@@ -14,7 +14,6 @@ header {
 }
 
 body {
-  background-color: #F7F7FF;
   color: #44525F;
 }
 
@@ -36,6 +35,13 @@ body {
   text-decoration: underline;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 main {
   margin: auto;
 }
@@ -43,25 +49,18 @@ main {
 /* Section Experience */
 .presentation {
   width: 80%;
-  height: 950px;
   margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
 .block-pres {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.pres-image {
-  height: 100%;
-}
-
-.pres-image img {
-  height: 100%;
 }
 
 .pres-text {
@@ -73,6 +72,11 @@ main {
 .pres-text h2 {
   font-size: 65px;
   margin-left: -130px;
+}
+
+.pres-text h2:hover {
+  color: #FE5F55;
+  text-decoration: underline;
 }
 
 .pres-text p {
@@ -87,33 +91,42 @@ main {
   gap: 15px;
   flex-direction: row;
   align-content: center;
-  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.button {
-  background-color: #FE5F55;
-  text-align: center;
-  height: 150px;
-  width: 150px;
-  border-radius: 75px;
-  cursor: pointer;
-  text-decoration: none;
+button {
+  margin: 20px;
 }
 
-.button span {
-  color: white;
+.fill {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
   position: relative;
-  top: 58px;
-  right: 0px;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.button:hover {
-  background-color: #44525F;
-  color: #FE5F55;
+.fill::after {
+  content: "";
+  background-color: #FE5F55;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
 }
 
 /* Section Experience */
@@ -123,6 +136,7 @@ main {
   align-items: center;
   background-color: #44525F;
   color: #F7F7FF;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.281);
 }
 
 .exper-card {
@@ -138,19 +152,25 @@ main {
 
 .list-exp {
   display: flex;
-  flex-direction: column;
-  margin-top: 35px;
+  flex-direction: row;
+  margin: 35px 0 35px 0;
   align-items: center;
-  align-content: flex-start;
-  justify-content: center;
+  place-content: flex-start center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px 0;
 }
 
 .card-exp {
-  width: 50%;
+  width: 400px;
   height: 196px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
-.card-exp:nth-child(2n) {}
 
 .card-info {
   display: flex;
@@ -162,14 +182,23 @@ main {
 .multi-info {
   display: flex;
   flex-direction: row;
+  margin: auto;
+  width: 80%;
 }
 
 .formations {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: auto;
+  align-items: flex-start;
+  margin-top: 30px;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.formations h2 {
+  margin-bottom: 15px;
+  text-decoration: underline;
 }
 
 .skills {
@@ -177,7 +206,21 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: auto;
+  margin-top: 30px;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.skill h2 {
+  text-decoration: underline;
 }
 
 .list-skill {
@@ -189,11 +232,150 @@ main {
 
 .card-skill {
   width: 30%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 5px;
 }
 
+.progress-skill {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: flex-start;
+}
 
+.progress-skill h2 {
+  text-decoration: underline;
+}
+
+.list-skill-progress {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.card-skill-progress {
+  width: 30%;
+  height: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 5px;
+}
 
 footer {
   margin: 15px 0 0 15px;
-  height: 30px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.rs-zone {
+  box-shadow: black;
+}
+
+.rs-zone img {
+  width: 45px;
+  padding: 15px 0 15px 0;
+
+}
+
+.rs-zone a img:hover {
+  color: #FE5F55;
+}
+
+/* Project PAGE*/
+.project-list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+}
+
+.project-list h1 {
+  font-size: 70px;
+  margin-bottom: 150px;
+}
+
+/* Contact PAGE */
+
+
+@media screen and (max-width: 991px) {
+  header {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .nav-bar {
+    width: auto;
+  }
+
+  .presentation {
+    width: auto;
+    height: 900px;
+    flex-direction: column;
+  }
+
+  .block-pres {
+    position: relative;
+    top: -148px;
+  }
+
+  .pres-text {
+    margin-left: 13px;
+    box-shadow: 33px 16px 19px #0000006e;
+    background-color: #44525F;
+  }
+
+  .pres-text h2 {
+    margin-left: 0;
+    color: white;
+  }
+
+  .pres-text p {
+    margin-left: 10px;
+    color: #FE5F55;
+  }
+
+  .exper-card {
+    width: auto;
+    margin-left: 16px;
+  }
+
+  .multi-info {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  .formations {
+    width: auto;
+  }
+
+  .skills {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {}
