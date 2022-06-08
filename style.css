@@ -301,21 +301,51 @@ footer {
 .project-list {
   display: flex;
   align-items: center;
-  align-content: center;
-  justify-content: center;
+  align-content: space-around;
+  justify-content: space-evenly;
   margin: auto;
-  width: 80%;
+  width: 90%;
   height: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.project-list h1 {
+.project-list-title {
   font-size: 70px;
-  margin-bottom: 150px;
+  margin: 35px 0 20px 50px;
 }
 
-/* Contact PAGE */
+.card-project {
+  background-color: #44525F;
+  width: 33%;
+  color: #F7F7FF;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 8px 7px rgba(44, 43, 43, 0.241);
+}
+
+.card-project-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  align-content: flex-start;
+}
+
+.project-tech {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  padding-bottom: 10px;
+}
 
 
+/* Responsive Media */
 @media screen and (max-width: 991px) {
   header {
     margin: auto;
@@ -342,9 +372,9 @@ footer {
   }
 
   .pres-text {
-    margin-left: 13px;
     box-shadow: 33px 16px 19px #0000006e;
     background-color: #44525F;
+    padding: 10px;
   }
 
   .pres-text h2 {
