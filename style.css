@@ -337,10 +337,8 @@ footer {
   align-content: flex-start;
 }
 
-<<<<<<< Updated upstream
 /* Contact PAGE */
-=======
-<<<<<<< HEAD
+
 /* Project PAGE */
 .openC-list {
   display: flex;
@@ -350,16 +348,6 @@ footer {
 }
 
 .cardProj {}
-=======
-.project-tech {
-  display: flex;
-  flex-direction: row;
-  gap: 7px;
-  padding-bottom: 10px;
-}
->>>>>>> main
->>>>>>> Stashed changes
-
 
 /* Responsive Media */
 @media screen and (max-width: 991px) {
