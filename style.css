@@ -337,12 +337,28 @@ footer {
   align-content: flex-start;
 }
 
+<<<<<<< Updated upstream
+/* Contact PAGE */
+=======
+<<<<<<< HEAD
+/* Project PAGE */
+.openC-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardProj {}
+=======
 .project-tech {
   display: flex;
   flex-direction: row;
   gap: 7px;
   padding-bottom: 10px;
 }
+>>>>>>> main
+>>>>>>> Stashed changes
 
 
 /* Responsive Media */
