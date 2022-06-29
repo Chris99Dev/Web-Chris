@@ -79,11 +79,6 @@ main {
   margin-left: -130px;
 }
 
-.pres-text h2:hover {
-  color: #FE5F55;
-  text-decoration: underline;
-}
-
 .pres-text p {
   font-size: 20px;
   margin-left: 15px;
@@ -303,6 +298,10 @@ footer {
 }
 
 /* Project PAGE*/
+.project-zone {
+  margin-bottom: 50px;
+}
+
 .project-list {
   display: flex;
   align-items: center;
@@ -369,8 +368,10 @@ footer {
   color: white;
 }
 
+.fa-github:hover {
+  color: #FE5F55;
+}
 
-/* Contact PAGE */
 
 /* Responsive Media */
 @media screen and (max-width: 991px) {
@@ -437,8 +438,20 @@ footer {
   footer {
     margin: 0;
   }
+
+  /* Project Page xTablet */
+  .project-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-project {
+    width: 70%;
+  }
 }
 
+/* Phone Media */
 @media screen and (max-width: 767px) {
   .presentation {
     height: auto;
@@ -475,5 +488,15 @@ footer {
 
   .card-skill-progress {
     width: auto;
+  }
+
+  /* Project Page xMobile */
+  .project-list-title {
+    font-size: 60px;
+  }
+
+  .card-project {
+    width: 85%;
+    height: 227px;
   }
 }
