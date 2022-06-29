@@ -35,6 +35,11 @@ body {
   text-decoration: underline;
 }
 
+.active {
+  color: #FE5F55;
+  text-decoration: underline;
+}
+
 .isDisabled {
   color: currentColor;
   cursor: not-allowed;
@@ -318,13 +323,19 @@ footer {
 
 .card-project {
   background-color: #44525F;
-  width: 33%;
+  width: 40%;
+  height: 215px;
+  padding: 15px;
   color: #F7F7FF;
-  padding: 17px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 8px 7px rgba(44, 43, 43, 0.241);
+  justify-content: space-around;
+}
+
+.card-project:hover {
+  box-shadow: 1px 1px 15px #0065FC;
 }
 
 .card-project-content {
@@ -333,21 +344,33 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
   align-content: flex-start;
 }
 
-/* Contact PAGE */
-
-/* Project PAGE */
-.openC-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+.card-project-content h2 {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.cardProj {}
+.objectif-list h4 {
+  text-decoration: underline;
+}
+
+.project-tech {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.project-tech a {
+  color: white;
+}
+
+
+/* Contact PAGE */
 
 /* Responsive Media */
 @media screen and (max-width: 991px) {
